@@ -1,0 +1,41 @@
+body{
+    background-image: url(fondo.jpg)
+}
+form {
+    width: 300%;
+    max-width: 300px;
+    text-align: center;
+    background: black;
+    margin: auto;
+}
+
+input[type=textfield] {
+    width: 75%;
+    height: 50px;
+    text-align: right;
+    background: white;
+}
+
+input[type=button],
+input[type=submit],
+input[type=reset] {
+    padding: 16px 16px;
+    min-width: 10%;
+    text-decoration: none;
+    margin: 4px 2px;
+    border-radius: 8px;
+    font-size: 20px;
+    display:10px ;
+    width:50px;
+    height:50px;
+    font-size:15px;
+}
+
+
+
+h1{
+    text-align: center;
+    color: darkred;
+   background: slategrey;
+}
+ 
