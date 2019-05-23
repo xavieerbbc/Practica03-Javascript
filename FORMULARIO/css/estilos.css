@@ -1,11 +1,15 @@
 
 #form {
-	width: 500px;
-	padding: 15px 20px;
-    color: cornsilk;
-	background-image: url('fondo.jpg');
+	width: 300px;
+	margin: auto;
+	color: cornsilk;
 	background-size: 100%;
 	
+	
+}
+#cuerpo{
+	background-image: url('fondo.jpg');
+    background-repeat: repeat;
 }
 
 h1{
@@ -16,12 +20,6 @@ h1{
 td {
 	padding-top: 10px;
 	padding-right: 15px;
-}
-
-#crear, #cancelar {
-	width: 150px;
-	margin: 20px;
-
 }
 
 #btn {

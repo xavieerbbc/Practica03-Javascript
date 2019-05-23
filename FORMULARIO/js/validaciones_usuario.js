@@ -43,9 +43,11 @@ function validarNumero(string){
     return out;
 } 
 
+
+
 function validarCedula() {
     var cedula = document.getElementById('ced').value.trim();
-    if (cedula.substring(0, 2) > 10) {
+    if (cedula.substring(0, 2) > 24) {
         document.getElementById('ced').classList.add('error');
         document.getElementById('cd').classList.add('p');
         alert('Cédula no válida');
@@ -54,6 +56,7 @@ function validarCedula() {
         return false;
     }
 }
+
 
 function validarLetras(string){
     var out = '';

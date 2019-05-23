@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
 </head>
 
-<body>
+<body id="cuerpo">
     <div id="form">
         <h1>Formulario</h1>
         <form method="POST" action="js/validaciones.php" onsubmit="return validarCamposObligatorios()">
@@ -16,9 +16,11 @@
                 <tr>
                     <td><label>Cedula</label></td>
                     <td><input type="text" id="ced" name="ced" placeholder="ingresar cédula" onfocus="wErrores(this)"
-                            onkeyup="this.value = val_numero(this.value)"></td>
+                            onkeyup="this.value = validarNumero(this.value)"
+                            onkeyup="this.value = validarCedula(this.value)"></td>
+
                     <td>
-                        <spam id="cd" style="display: none;">ERROR</spam>
+                        <spam id="cd" style="display: none;"></spam>
                     </td>
                 </tr> 
 
@@ -53,7 +55,7 @@
                     <td><input type="text" id="fec" name="fec" placeholder="dd/mm/yyyy" onfocus="wErrores(this)">
                     </td>
                     <td>
-                        <spam id="f" style="display: none;">ERROR</spam>
+                        <spam id="f" style="display: none;"></spam>
                     </td>
                 </tr>
 
@@ -62,7 +64,7 @@
                     <td><input type="text" id="ema" name="ema" placeholder="ingresar email" onfocus="wErrores(this)">
                     </td>
                     <td>
-                        <spam id="e" style="display: none;">ERROR</spam>
+                        <spam id="e" style="display: none;"></spam>
                     </td>
                 </tr>
 
@@ -76,7 +78,7 @@
                 </tr>
             </table>
         </form>
-        <spam id="p" style="display: none;">Error, campos incompletos!</spam>
+        <spam id="p" style="display: none;"></spam>
     </div>
 
 </body>
